@@ -1,0 +1,115 @@
+CI/CD AND CLOUD DEVOPS
+----------------------
+Configuring Git with GitHub
+----------------------------
+1. Install Git in the system 
+2. Create an account in GitHub
+Configuration:
+--------------
+git config --global user.name "github-username"
+git config --global user.email "your-mail"
+
+To see the account configured:
+git config --list
+
+Change the GitHub credentials:
+------------------------------
+git config --global --unset user.name 
+git config --global --unset user.email 
+
+Life Cycle of Git:
+---------------------
+1. Initializes the git --> git init
+(git will identify the folder, it is tracked)
+
+2. Adding files -->git add filename
+(The files are in staging area)
+
+3. Commit the files -->git commit -m "message"
+(committing the files and ready to push)
+
+4. Push the code to GitHub --> git push -u origin branchname
+Ex: git push -u origin main (pushing the code to main branch)
+
+
+Process:
+---------
+a. Create  a  folder and GitHub repository with the same name
+Ex: created a folder S117 in local and S117 repository in GitHub
+
+b. In local folder S117, add README.md file using the command
+
+echo "# S117" >> README.md
+
+c. Open CMD and set path upto S117
+
+C:\Users\User\Desktop\S117
+
+d. Initialize the git
+      git init
+
+e. Add the README.md file to git
+     git add README.md
+
+f. commit the file to local repository
+    git commit -m "read me file uploaded"
+
+g. Create a branch main
+    Syntax: git branch -M branchname
+    Ex:     git branch -M main
+
+h. Add remote repository using the command
+     git remote add origin https://github.com/phani2498/S117.git
+
+i. Push the file into remote respository
+     git push -u origin main
+
+---------------------------------------------------------------------
+Creating other branch and adding files to it
+--------------------------------------------
+a. To create branch, use git branch branchname
+
+Syntax:git branch branchname
+Ex:git branch first
+
+b. To check the list of branches
+
+	git branch
+
+c. To change/shift from one branch to other branch
+
+       git checkout branchname_toshift
+
+Ex: 
+You are in main branch. Create a branch first and shift to first branch
+
+a. git branch first
+b. git checkout first
+
+Commands to push the code to first branch:
+-------------------------------------------
+git add abc.txt
+git commit -m "abc file is added first branch"
+git push -u origin first
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
